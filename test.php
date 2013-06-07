@@ -95,7 +95,6 @@
 			var sendback;
 			var content = xmldoc.getElementsByTagName("Content");
 			var msgtype = xmldoc.getElementsByTagName("MsgType")[0].firstChild.nodeValue;
-			console.log(xmldoc);
 			if (msgtype == "text") {
 				for (var i = 0; i < content.length; i++) {
 					sendback = content[i].firstChild.nodeValue;
@@ -120,7 +119,6 @@
 					var title = xmldoc.getElementsByTagName("Title")[0].firstChild.nodeValue;
 					var url = xmldoc.getElementsByTagName("MusicUrl")[0].firstChild.nodeValue;
 					var description = xmldoc.getElementsByTagName("Description")[0].firstChild.nodeValue;
-					console.log(title);
 					displayMusic(title,url,description);
 			}
 
@@ -186,21 +184,18 @@
   <script src="jquery.js"></script>
 <div id="wrapper">
     <h2>微信公众平台功能在线测试：</h2>
-	<input class="url" type="text" value="http://42.120.22.130/weixin.php" placeholder="">
+	<input class="url" type="text" value="" placeholder="">
 	<div class="messageBox"></div>
 	输入内容：<input type="text" class="keyword" value="民解民忧"><br>
 	发送者openID:<input type="text" class="sendname" value="red"><br>
 	接收者openID:<br><input type="text" class="receivename" value="wechat"><br>
 	<form action="buy.php" method="post">
 			<input type="button" class="send btn " value="发送" />			
-		<input type="hidden" value="<?php echo $user ?>" name="user">
-		<input type="hidden" value="<?php echo $uid ?>" name="uid">
-		<input type="submit" value="添加该功能" class="btn btn-primary">
 	</form>
       <hr>
 
       <footer>
-        <p>© Company 2013</p>
+        <p> By <a href="http://xhxh.me">@xred</a></p>
       </footer>
 
  </div>
