@@ -186,7 +186,12 @@
     <h2>微信公众平台功能在线测试：</h2>
 	API地址:<input class="url" type="text" value="" placeholder="请输入API地址">
 	<div class="messageBox"></div>
-	输入内容：<input type="text" class="keyword" value="" placeholder="请在此输入内容"><br>
+	<div calss="text">输入内容：<input type="text" class="keyword" value="" placeholder="请在此输入内容"><br></div>
+	<div class="position">
+		请输入地址： <br>
+		x：<input type="text" class="xposition" placeholder="X坐标" /><br>
+		y：<input type="text" class="Yposition" placeholder="Y坐标" />
+	</div>
 	发送者openID:<input type="text" class="sendname" value="xred"><br>
 	接收者openID:<br><input type="text" class="receivename" value="wechat"><br>
 	<form action="buy.php" method="post">
